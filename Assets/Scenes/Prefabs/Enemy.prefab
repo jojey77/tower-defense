@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9148587268951638402}
+  - component: {fileID: 5420313241126279497}
   - component: {fileID: 3665858116155029907}
   - component: {fileID: 8548071814675324737}
   - component: {fileID: 5991082451270404585}
-  - component: {fileID: 5420313241126279497}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -34,6 +34,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5420313241126279497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3989060482953324897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0556b33924c92e499f172c5b120a430, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  health: 200
+  moneyGain: 50
+  deathEffect: {fileID: 7685322156368924660, guid: 4f737a9d141cf444d80753d1f5a5eddf,
+    type: 3}
 --- !u!33 &3665858116155029907
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -94,16 +111,3 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5420313241126279497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3989060482953324897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0556b33924c92e499f172c5b120a430, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
