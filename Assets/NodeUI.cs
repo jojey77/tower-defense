@@ -12,18 +12,18 @@ public class NodeUI : MonoBehaviour
 
     private Node target;
 
-  
-    public void SetTarget (Node t)
+
+    public void SetTarget(Node t)
     {
         target = t;
 
         transform.position = target.GetBuildPosition();
-        
+
         if (!target.isUpgraded)
         {
             //upgradeButton.interactable = true;
             upgradeCost.text = "$" + target.turretBlueprint.upgradeCost;
-            
+
         }
         else
         {
@@ -31,7 +31,7 @@ public class NodeUI : MonoBehaviour
             //upgradeButton.interactable = false;
 
         }
-        
+
         ui.SetActive(true);
     }
 
@@ -42,16 +42,23 @@ public class NodeUI : MonoBehaviour
 
     public void Upgrade()
     {
-        
+
         if (!target.isUpgraded)
         {
             target.UpgradeTurret();
             upgradeCost.text = "Fully Upgraded";
-        } else
+        }
+        else
         {
             upgradeCost.text = "Fully Upgraded";
             Debug.Log("fully upgraded");
         }
         //BuildManager.instance.DeselectNode();
+    }
+
+    public void Sell()
+    {
+        target.SellTurret();
+        BuildManager.instance.DeselectNode();
     }
 }

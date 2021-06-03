@@ -64,22 +64,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BuildManager.cs" />
+    <Compile Include="Assets\Bullet.cs" />
+    <Compile Include="Assets\Enemy.cs" />
+    <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\GameOver.cs" />
+    <Compile Include="Assets\Lives.cs" />
+    <Compile Include="Assets\MoneyUI.cs" />
+    <Compile Include="Assets\Node.cs" />
     <Compile Include="Assets\NodeUI.cs" />
-    <Compile Include="Assets\Scenes\Programms\BuildManager.cs" />
-    <Compile Include="Assets\Scenes\Programms\Bullet.cs" />
-    <Compile Include="Assets\Scenes\Programms\Enemy.cs" />
-    <Compile Include="Assets\Scenes\Programms\GameOver.cs" />
-    <Compile Include="Assets\Scenes\Programms\Human.cs" />
-    <Compile Include="Assets\Scenes\Programms\Lives.cs" />
-    <Compile Include="Assets\Scenes\Programms\Manager.cs" />
-    <Compile Include="Assets\Scenes\Programms\MoneyUI.cs" />
-    <Compile Include="Assets\Scenes\Programms\Node.cs" />
-    <Compile Include="Assets\Scenes\Programms\PlayerStats.cs" />
-    <Compile Include="Assets\Scenes\Programms\Shop.cs" />
-    <Compile Include="Assets\Scenes\Programms\Tourret.cs" />
+    <Compile Include="Assets\PlayerStats.cs" />
     <Compile Include="Assets\Scenes\Programms\TurretBlueprint.cs" />
     <Compile Include="Assets\Scenes\Programms\WaveSpawner.cs" />
-    <Compile Include="Assets\Scenes\Programms\Waypoints.cs" />
+    <Compile Include="Assets\Shop.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -114,6 +111,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\Turret.cs" />
+    <Compile Include="Assets\Waypoints.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
